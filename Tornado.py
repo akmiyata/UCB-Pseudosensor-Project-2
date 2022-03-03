@@ -26,7 +26,7 @@ class WeatherTen(tornado.web.tornado.web.RequestHandler):
         t=[]
         h=[]
         n=[]
-        #Read in ten values from pseudosensor
+        #Read in ten values from pseudosensor, each set should be read 1 second apart from the previous set
         for i in range(10):    
             tempin = str(random.randint(-20, 100))
             t.append(int(tempin))
@@ -48,12 +48,13 @@ class WeatherTen(tornado.web.tornado.web.RequestHandler):
         maxh=max(h)
         minh=min(h)
         self.render("getTen.html", t=t, maxt=maxt, mint=mint, avgt=avgt, h=h, maxh=maxh, minh=minh, avgh=avgh, n=n)
-
+#Redirect to appropriate page depending on which button is clicked
 app = tornado.web.Application([
     (r"/",IndexHandler),
     (r"/getoneweatherplease", WeatherOne),
     (r"/gettenweathers", WeatherTen)
 ])
 
+#Instruct server to listen for HTTP requests (i.e. button clicks, most likely)
 app.listen(8080)
 tornado.ioloop.IOLoop.current().start()
