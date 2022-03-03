@@ -4,11 +4,13 @@
       <style>
         body {background-color: #4ABDAC;}
         
+        <!--h1 will be used for Temperature, Humidity, and Time headings -->
         h1 {
             color: white;
             font-family: verdana;
             font-size: 300%;}
-        
+         
+        <!--h2 will be used for Temperature and Humidity alarms -->
         h2 {
             color: red;
             font-family: verdana;
@@ -33,6 +35,7 @@
    </head>
    <body>
      <ul>
+        <!--Display 10 randomly generated temperature values, with timestamps for each-->
         <h1> Temperature </h1>
         <p>The last ten temperatures read were: {{ t }} degrees fahrenheit</p>
         <p>Max temperature: {{ maxt }}</p>
