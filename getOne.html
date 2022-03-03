@@ -1,8 +1,9 @@
 <html>
    <head>
       <title>Current Weather</title>
+      <!--The '<style>' section defines CSS used for different HTML elements (e.g. the 'h1' section defines color/font style for headers of type h1, in this case, a temperature/humidity alarm)--> 
       <style>
-        body {background-color: #4ABDAC;}
+        body {background-color: #4ABDAC;} /*Teal background*/
         
         h1 {
             color: red;
@@ -39,6 +40,7 @@
               tal=document.getElementById("tempalrm").value;
             }
             </script>
+       <!--If temperature or humidity are greater than the trigger value, display red-text warning-->
          {%if int(tempin)>tal %} 
             <h1>The current temperature is over {{tal}} degrees! </h1> {%end%}
         
