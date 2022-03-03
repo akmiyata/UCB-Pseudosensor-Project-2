@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App!</title>
+    <style>
+    body {background-color: #4ABDAC;}
+    
+    h1 {
+        color: white;
+        font-family: verdana;
+        font-size: 300%;}
+    
+    .button {
+        background-color: #FC4A1A; /* Burnt orange */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        border-radius: 3px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+}
+    </style>
+</head>
+<body>
+    <h1>Welcome to the ECEA 5347</h1>
+    <h1>WEATHER APP!</h1>
+
+    <p><a href="http://localhost:8080/getoneweatherplease"><button class="button" name="Get one button" type="button">Get Current Weather</button></a></p>
+    <p><a href="http://localhost:8080/gettenweathers"><button class="button" name="Get ten button" type="button">Get 10-point weather history</button></a></p>
+    <p><a href="http://www.google.com"><button class="button" name="Goog" type="button">Quit and go to Google</button></a></p>
+
+    <p><label for="temp alarm">Alert me if temperature greater than:</label></p>
+
+    <select name="humidalrm" id="humid">
+        <option value="-10">-10</option>
+        <option value="0">0</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+        <option value="50">50</option>
+        <option value="60">60</option>
+        <option value="70">70</option>
+        <option value="80">80</option>
+        <option value="90">90</option>
+    </select>
+<p><label for="humid alarm">Alert me if humidity greater than:</label></p>
+
+<select name="humidalrm" id="humid">
+  <option value="0">0</option>
+  <option value="10">10</option>
+  <option value="20">20</option>
+  <option value="30">30</option>
+  <option value="40">40</option>
+  <option value="50">50</option>
+  <option value="60">60</option>
+  <option value="70">70</option>
+  <option value="80">80</option>
+  <option value="90">90</option>
+
+</select>
+</body>
+</html>

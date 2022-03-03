@@ -1,0 +1,55 @@
+<html>
+   <head>
+      <title>10-poin historical weather</title>
+      <style>
+        body {background-color: #4ABDAC;}
+        
+        h1 {
+            color: white;
+            font-family: verdana;
+            font-size: 300%;}
+        
+        h2 {
+            color: red;
+            font-family: verdana;
+            font-size: 200%;}
+        
+        .button {
+            background-color: #FC4A1A; /* Burnt orange */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            border-radius: 3px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+    }
+        p {
+            color: white;
+            font-family: verdana;
+            font-size: 120%;}
+        </style>
+   </head>
+   <body>
+     <ul>
+        <h1> Temperature </h1>
+        <p>The last ten temperatures read were: {{ t }} degrees fahrenheit</p>
+        <p>Max temperature: {{ maxt }}</p>
+        <p>Min temperature: {{ mint }}</p>
+        <p>Average temperature: {{ avgt }}</p>
+        <h1> Humidity </h1>
+        <p>The last ten humidities read were: {{ h }}</p>
+        <p>Max humidity: {{ maxh }}</p>
+        <p>Min humidity: {{ minh }}</p>
+        <p>Average humidity: {{ avgh }}</p>
+        <h1> Time </h1>
+        <p>The temperatures and humidities above were read at times: {{ n }}%</p>
+        <!-- Display alerts if temp or humidity is above selected value-->
+        {%if int(maxt)>50 %} 
+        <h2>ALERT: The temperature rose above {{tal}} degrees! </h2> {%end%}
+        {%if int(maxh)>50 %} 
+        <h2>ALERT: The humidity rose above {{hal}}%! </h2> {%end%}
+     </ul>
+   </body>
+ </html>
