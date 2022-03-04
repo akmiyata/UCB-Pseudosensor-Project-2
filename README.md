@@ -1,6 +1,6 @@
 # UCB-Pseudosensor-Project-2
 
-This is the second project required for Rapid Prototyping of Embedded Interface Designs (ECEA 5347) at the University of Colorado - Boulder, and is very similar in design to the first project. I have included three files:
+This is the second project required for Rapid Prototyping of Embedded Interface Designs (ECEA 5347) at the University of Colorado - Boulder, and is very similar in design to the first project. I have included four files:
   1.  UCB-Pseudosensor-Project2.pdf: Project overview, including requirements, assumptions, and other notes, as well as screenshots of the UI in several scenarios.
   2.  index.html: Landing page for the user interface. I chose function over form due to timing constraints; normally this would bother me, but I'm focusing on my current  
       classload and job hunt at the moment.  
