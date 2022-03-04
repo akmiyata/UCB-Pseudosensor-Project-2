@@ -9,4 +9,4 @@ This is the second project required for Rapid Prototyping of Embedded Interface 
 
 # What I learned
 
-XXXXXXX FILL
+Despite the recent upload, it's been awhile since I worked on this project... I was already quite familiar with HTML/CSS, so it was quite easy to setup a VERY basic UI (normally I'd make the UI "prettier", but time constraints did not allow me to do so... maybe one day...). Tornado Web Server was a new technology for me, but I was already somewhat familiar with client-server communication (via HTTP), so syntax was the only real hurdle there.  I think the biggest takeaway from this project 
